@@ -1,8 +1,12 @@
-const Header = () => {
+import NavBar from "./NavBar";
+import logo from "../../img/logo.svg";
+
+const Header = ({banner}) => {
   return (
-    <div>
-      Header
-    </div>
+    <header className="vh-100">
+      <NavBar img={logo} />
+      {banner}
+    </header>
   )
 }
 

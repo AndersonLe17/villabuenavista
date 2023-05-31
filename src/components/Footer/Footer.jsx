@@ -1,6 +1,4 @@
-import MenuFooter from "./MenuFooter";
-
-const Footer = ({nombre}) => {
+const Footer = () => {
   return (
     <div>
       Footer
