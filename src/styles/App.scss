@@ -6,11 +6,20 @@ h1,h2,h3,h4,h5,h6,p {
 }
 header {
   .navbar {
-    height: 12vh;
+    height: 12.5vh;
+    padding: 0;
     border-bottom: 1px solid $brown300;
   }
   .banner {
-    height: 90vh;
+    height: 87.5vh;
+    &-title {
+      font-size: 4.5em;
+      font-weight: bolder;
+    }
+    &-desc {
+      font-weight: 1.05em;
+    }
+
   }
 }
 

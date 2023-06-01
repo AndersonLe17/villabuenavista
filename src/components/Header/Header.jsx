@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo16-9.png";
 
 const Header = ({banner}) => {
   return (

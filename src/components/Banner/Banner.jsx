@@ -1,21 +1,27 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ButtonCustom } from "../ButtonCustom";
 
 const Banner = () => {
   return (
     <Container fluid className="d-flex banner">
-        <div>
-          <h1>Villa Buenavista</h1>
-          <p>
+      <Row>
+        <Col md={5} className="ms-5 d-flex justify-content-center flex-column">
+          <h1 className="banner-title">Villa Buenavista</h1>
+          <p className="banner-desc">
             ¡Bienvenidos a Hospedaje Villa Buenavista! Nuestro alojamiento
             ofrece una estancia cómoda y relajante con impresionantes vistas
             panorámicas. Ya sea por negocios o placer, nuestro equipo brinda un
             servicio cálido y personalizado para una experiencia inolvidable.
             ¡Esperamos darles la bienvenida pronto!
           </p>
-          <ButtonCustom variant="basic" text="Empezar" className="px-4" />
-        </div>
-        <div>A</div>
+          <div>
+            <ButtonCustom variant="basic" text="Empezar" className="px-5" />
+          </div>
+        </Col>
+        <Col>
+          
+        </Col>
+      </Row>
     </Container>
   );
 };
