@@ -4,7 +4,9 @@ import { Header } from '../components/Header';
 const Home = () => {
   return (
     <>
-      <Header banner={<Banner/>}/>
+      <Header>
+        <Banner/>
+      </Header>
     </>
   );
 };

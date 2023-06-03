@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
 
-function ButtonCustom({text, className, variant}) {
+function ButtonCustom({text, className, variant, onClick}) {
   return (
-    <Button variant={variant} className={className}>{text}</Button>
+    <Button variant={variant} className={className} onClick={onClick}>{text}</Button>
   );
 }
 

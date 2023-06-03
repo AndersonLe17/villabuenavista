@@ -1,9 +1,12 @@
 @import "fonts";
 @import "colors";
+@import "vars";
 
 h1,h2,h3,h4,h5,h6,p {
   font-family: $inter;
+  margin: 0;
 }
+
 header {
   .navbar {
     height: 12.5vh;
@@ -19,10 +22,77 @@ header {
     &-desc {
       font-weight: 1.05em;
     }
-
+  }
+  .header-link {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: $poppins;
+    font-size: 1.15em;
+    &:hover {
+      color: $black;
+      text-shadow: 1px 1px #1f1f1f40;
+    }
   }
 }
 
+.login {
+  padding-top: 5rem;
+  &-text {
+    width: 500px;
+    margin-top: 3rem;
+    margin-left: 17.5%;
+    font-family: $poppins;
+    h2 {
+      width: 395px;
+      font-size: 2.55em;
+      line-height: 1.45em;
+    }
+    p {
+      font-size: 1.05em;
+      line-height: 1.75em;
+      a {
+        text-decoration: none;
+        color: $brown500;
+      }
+    }
+  }
+  &-img {
+    img {
+      margin-top: 8.5rem;
+      width: 300px;
+      position: relative;
+      left: -25%;
+    }
+  }
+  &-form {
+    display: flex;
+    justify-content: center;
+    &-body {
+      width: 375px;
+    }
+  }
+  &-title h3 {
+      font-size: 2.1em;
+  }
+  form {
+    p a {
+      color: #B0B0B0;
+      font-size: 0.85em;
+    }
+    button {
+      padding: 0.85rem;
+    }
+  }
+  &-passport {
+    p {
+      color: #B0B0B0;
+      font-size: 1em;
+    }
+    img {
+      width: 40px;
+    }
+  }
+}
 
 .btn-home {
   width: 9.5rem;
@@ -60,6 +130,32 @@ header {
 }
 
 .form-control {
+
+  &.in-login {
+    border: none;
+    background-color: #F0EFFF;
+    color: $text;
+    font-size: 1.05em;
+    padding: 1rem;
+
+    &::placeholder {
+      color: #A7A3FF;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    & + i {
+      height: 0;
+      display: flex;
+      justify-content: flex-end;
+      color: #A7A3FF;
+      position: relative;
+      top: -36.5px;
+      right: 1rem;
+      cursor: pointer;
+    }
+  }
+
   &.in-search {
     border: none;
     background-color: $bone200;
@@ -75,6 +171,16 @@ header {
     background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
   }
   &:focus {
-    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 0 0.1rem #00000040;
+  }
+}
+
+@media (max-width: 1199px) {
+  .login {
+    padding-top: 7.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

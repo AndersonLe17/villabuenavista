@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { ButtonCustom } from "../ButtonCustom";
-import SearchInput from "../SearchInput/SearchInput";
+import { SearchInput } from "../Input";
 import { useNavigate } from "react-router-dom";
 
 const NavBar = ({ img }) => {
