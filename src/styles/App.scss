@@ -94,6 +94,61 @@ header {
   }
 }
 
+.layout-sidebar {
+  width: 100px;
+  background-color: $yellow;
+  border-radius: 0 20px 20px 0;
+  padding: 0.90rem;
+  &-img {
+    text-align: center;
+    padding: 0.75rem;
+    img {
+      background-color: $white;
+    }
+    p {
+      margin-top: 0.45rem;
+      opacity: 0.95;
+      font-weight: 600;
+      font-size: 0.75em;
+    }
+    .dropdown-menu {
+      inset: 0px auto auto 1.75rem !important;
+    }
+  }
+  &-nav {
+    .sidebar-item {
+      opacity: 0.7;
+      transition: ease 0.25s;
+      margin: 1.75rem 0;
+      i {
+        font-size: 1.75em;
+        margin-bottom: 0.45rem;
+      }
+      p {
+        font-size: 0.675em;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+        color: $text;
+        opacity: 0.7;
+      }
+
+      .dropdown-menu {
+        inset: 0px auto auto 1rem !important;
+      }
+      &:hover {
+        opacity: 1;
+        text-shadow: 1px 1px #0000002c;
+      }
+      &.active {
+        opacity: 1;
+        text-shadow: 1px 1px #0000001a;
+      }
+    }
+  }
+}
+
 .btn-home {
   width: 9.5rem;
 }
@@ -127,6 +182,12 @@ header {
     color: $white;
     border-color: inherit;
   }
+}
+
+.separator {
+  width: 100%;
+  height: 1.1px;
+  opacity: 0.45;
 }
 
 .form-control {
@@ -175,6 +236,14 @@ header {
   }
 }
 
+.dropend .dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
 @media (max-width: 1199px) {
   .login {
     padding-top: 7.5rem;
@@ -182,5 +251,27 @@ header {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-sidebar {
+    width: 65px;
+    background-color: $yellow;
+    border-radius: 0 20px 20px 0;
+    padding: 0.9rem;
+    &-img {
+      padding: 0;
+      p {
+        display: none;
+      }
+    }
+    &-nav {
+      .sidebar-item {
+        p {
+          display: none;
+        }
+      }
+    }
   }
 }
