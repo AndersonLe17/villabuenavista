@@ -8,6 +8,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setpassword] = useState('');
+  
   const submitHandler = (event) => {
     event.preventDefault();
     console.log(username);

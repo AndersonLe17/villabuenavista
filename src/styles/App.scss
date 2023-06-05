@@ -95,14 +95,18 @@ header {
 }
 
 .layout-sidebar {
-  width: 100px;
+  position: fixed;
+  width: 7rem;
   background-color: $yellow;
   border-radius: 0 20px 20px 0;
-  padding: 0.90rem;
+  padding: 1rem 0.90rem;
+  transition: transform 0.45s ease-in-out;
   &-img {
+    margin-top: 0.75rem;
     text-align: center;
-    padding: 0.75rem;
     img {
+      width: 3rem;
+      height: 3rem;
       background-color: $white;
     }
     p {
@@ -112,7 +116,25 @@ header {
       font-size: 0.75em;
     }
     .dropdown-menu {
-      inset: 0px auto auto 1.75rem !important;
+      inset: 0px auto auto 1rem !important;
+      width: 225px;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+      }
+      p {
+        margin: 0;
+        opacity: 1;
+        font-size: 0.9em;
+      }
+      span {
+        opacity: 0.75;
+        font-size: 0.75em;
+      }
+      i {
+        font-size: 0.9em;
+      }
     }
   }
   &-nav {
@@ -147,10 +169,54 @@ header {
       }
     }
   }
+  &-footer {
+    .sidebar-fold {
+      opacity: 0.7;
+      transition: ease 0.25s;
+      margin: 1.75rem 0;
+      i {
+        cursor: pointer;
+        font-size: 1.75em;
+        margin-bottom: 0.45rem;
+      }
+      &:hover {
+        opacity: 1;
+        text-shadow: 1px 1px #0000002c;
+      }
+    }
+  }
+  &.toggle {
+    transform: translateX(-7rem);
+  }
 }
 
 .btn-home {
   width: 9.5rem;
+}
+
+.btn-toggle {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $yellow;
+  margin: 0 1rem 1rem 0;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    opacity: 0.7;
+    font-size: 1.75em;
+  }
+  &:hover {
+    box-shadow: 1px 1px #0000002c;
+    i {
+      opacity: 1;
+    }
+  }
 }
 
 .btn {
@@ -262,8 +328,17 @@ header {
     padding: 0.9rem;
     &-img {
       padding: 0;
+      img {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
       p {
         display: none;
+      }
+      .dropdown-menu {
+        p {
+          display: block;
+        }
       }
     }
     &-nav {

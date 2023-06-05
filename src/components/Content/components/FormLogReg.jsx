@@ -8,7 +8,7 @@ const FormLogReg = ({ title, type }) => {
       <div className="login-title">
         <h3 className="fw-medium family-poppins mb-4 pb-1">{title}</h3>
       </div>
-      {(type==="login")?<LoginForm />:<LoginForm />}
+      {(type==="login")?<LoginForm />:<></>}
       <div className="login-passport mt-5">
         <p className="text-center text-mutted my-4">o continúa con</p>
         <div className="d-flex justify-content-center">
