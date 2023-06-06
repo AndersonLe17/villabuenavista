@@ -1,5 +1,8 @@
 import { Banner } from "../components/Banner";
+import { CardsService } from "../components/Content";
 import { Header } from "../components/Header";
+
+
 
 const Home = () => {
   return (
@@ -7,6 +10,8 @@ const Home = () => {
       <Header>
         <Banner />
       </Header>
+      <CardsService/>
+
     </>
   );
 };
