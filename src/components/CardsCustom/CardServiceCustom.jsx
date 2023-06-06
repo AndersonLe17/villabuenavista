@@ -21,7 +21,7 @@ const CardServiceCustom = ({ title, price, imageRoom }) => {
               <a href="/detail-room" className="link-light" style={{ textDecoration: "none" }}>
                 <br />
                 Mas detalles
-                <i class="fa-regular fa-arrow-right ps-2"></i>
+                <i className="fa-regular fa-arrow-right ps-2"></i>
               </a>
             </Col>
           </Row>
