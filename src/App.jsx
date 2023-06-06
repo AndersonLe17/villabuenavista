@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
+import DetailsRoom from "./pages/DetailsRoom";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Home/>} />
+          <Route path={"/detail-room"} element={<DetailsRoom/>} />
           <Route path={"/login"} element={<Login/>} />
           <Route path={"/dashboard/*"} element={<Dashboard/>} />
           <Route path={"/register"} element={<Register/>} />

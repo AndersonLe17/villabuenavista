@@ -4,4 +4,4 @@ const DetailsRoom = () => {
     )
   }
   
-  export default DetailsRoom
+  export default DetailsRoom;
