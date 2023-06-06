@@ -1,5 +1,5 @@
 import { Banner } from "../components/Banner";
-import { Header } from "../components/Header";
+import { Header, Details } from "../components/Header";
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Header>
         <Banner />
       </Header>
+     <Details/> 
     </>
   );
 };
