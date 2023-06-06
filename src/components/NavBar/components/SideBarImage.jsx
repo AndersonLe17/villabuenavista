@@ -22,10 +22,10 @@ const SideBarImage = () => {
         </NavDropdown.Header>
         <NavDropdown.Divider />
         <NavDropdown.Item to="/account">
-          <i class="fa-light fa-gear"></i> Cuenta
+          <i className="fa-light fa-gear"></i> Cuenta
         </NavDropdown.Item>
         <NavDropdown.Item to="/">
-          <i class="fa-light fa-arrow-right-from-bracket"></i> Cerrar Sesión
+          <i className="fa-light fa-arrow-right-from-bracket"></i> Cerrar Sesión
         </NavDropdown.Item>
       </NavDropdown>
     </div>
