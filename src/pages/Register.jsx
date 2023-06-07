@@ -1,7 +1,11 @@
-
+import { RegisterContent } from "../components/Content";
+import { HeaderLogin } from "../components/Header";
 const Register = () => {
   return (
-    <div>Register</div>
+    <>
+      <HeaderLogin />
+      <RegisterContent />
+    </>
   )
 }
 
