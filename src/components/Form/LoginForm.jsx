@@ -3,17 +3,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { LoginInput } from "../Input";
 import { ButtonCustom } from "../ButtonCustom";
 import { useState } from "react";
+import { validateLogin } from "../../fetch/login/LoginFetch";
 
 const LoginForm = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setpassword] = useState('');
   
-  const submitHandler = (event) => {
+  const submitHandler = async(event) => {
     event.preventDefault();
-    console.log(username);
-    console.log(password);
-    navigate('/dashboard');
+
+    const response = await validateLogin({username, password});
+    console.log(response);
+    response.token && navigate("/dashboard");
   }
 
   return (

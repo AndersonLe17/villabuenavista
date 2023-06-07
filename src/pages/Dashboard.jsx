@@ -6,13 +6,13 @@ import StaffContent from "../components/Content/StaffContent";
 const Dashboard = () => {
   return (
     <div className="layout d-flex" >
-      <SideBarDashboard />
       <div className="layout-content">
         <Routes>
           <Route path="/" element={<DashboardContent/>}/>
           <Route path="staff" element={<StaffContent/>}/>
         </Routes>
       </div>
+      <SideBarDashboard />
     </div>
   );
 };

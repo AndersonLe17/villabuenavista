@@ -1,10 +1,10 @@
 import { ButtonCustom } from "../../ButtonCustom";
 
-const MenuButtons = ({ isCreator, isReporter, children }) => {
+const MenuButtons = ({ isCreator, isReporter, children, onClickCreator }) => {
   return (
-    <div className="py-4 row justify-content-between">
+    <div className="py-3 row justify-content-between">
       <div className="col">
-        {isCreator && <ButtonCustom className="px-5 w-auto" variant="basic" text="Agregar" />}
+        {isCreator && <ButtonCustom className="px-5 w-auto" variant="basic" text="Agregar" onClick={onClickCreator} />}
       </div>
       <div className="col d-flex justify-content-end">
         {children}

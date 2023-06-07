@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { ButtonCustom } from "../ButtonCustom";
 
 const Banner = () => {
@@ -20,7 +20,7 @@ const Banner = () => {
             </div>
           </Col>
           <Col>
-          <img src="https://hackmd.io/_uploads/HJ_KNuaIh.jpg"/>
+          <Image src="https://hackmd.io/_uploads/HJ_KNuaIh.jpg"/>
           </Col>
         </Row>
       </Container>

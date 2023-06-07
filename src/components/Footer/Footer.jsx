@@ -1,24 +1,13 @@
-import React from "react";
 const Footer = () => {
   return (
     <footer className="text-white py-4">
       <div className="container">
         <nav className="row justify-content-center flex-wrap">
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Nosotros</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Ayuda</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Contactanos</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Privacidad</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Terminos</li>
-          </ul>
+          <ItemNav title="Nosotros" />
+          <ItemNav title="Ayuda" />
+          <ItemNav title="Contactanos" />
+          <ItemNav title="Privacidad" />
+          <ItemNav title="Terminos" />
         </nav>
       </div>
       <div className="container">
@@ -33,9 +22,9 @@ const Footer = () => {
               </ul>
               <ul className="col-11 col-md-2 list-unstyled d-flex flex-row align-items-center">
                 <li className="text-center text-sm-start">
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-youtube"></i>
+                  <i className="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </li>
               </ul>
             </nav>
@@ -45,4 +34,13 @@ const Footer = () => {
     </footer>
   );
 };
+
+const ItemNav = ({title}) => {
+  return (
+    <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
+      <li className="text-center text-sm-start">{title}</li>
+    </ul>
+  );
+};
+
 export default Footer;

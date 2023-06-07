@@ -70,7 +70,7 @@ const Feature = ({ icon, sub, detail }) => {
 const Offer = () => {
   return (
     <div>
-      <div className=" offer text-center">
+      <div className="offer text-center">
         <h3 className="offer-sub text-center">Lo que ofrecemos</h3>
         <div className="offer-content">
           <p>

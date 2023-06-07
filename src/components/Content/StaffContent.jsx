@@ -7,7 +7,6 @@ const StaffContent = () => {
   return (
     <Container fluid className="py-4">
       <Breadcrumb subTitle="Personal" title="Personas"/>
-
       <RegDataTable />
     </Container>
   );
