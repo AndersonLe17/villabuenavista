@@ -4,21 +4,11 @@ const Footer = () => {
     <footer className="text-white py-4">
       <div className="container">
         <nav className="row justify-content-center flex-wrap">
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Nosotros</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Ayuda</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Contactanos</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Privacidad</li>
-          </ul>
-          <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
-            <li className="text-center text-sm-start">Terminos</li>
-          </ul>
+          <ItemNav tittle="Nosotros" />
+          <ItemNav tittle="Ayuda" />
+          <ItemNav tittle="Contactanos" />
+          <ItemNav tittle="Privacidad" />
+          <ItemNav tittle="Terminos" />
         </nav>
       </div>
       <div className="container">
@@ -43,6 +33,13 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+  );
+};
+const ItemNav = ({ tittle }) => {
+  return (
+    <ul className="col-6 col-md-2 list-unstyled d-flex flex-column align-items-center">
+      <li className="text-center text-sm-start">{tittle}</li>
+    </ul>
   );
 };
 export default Footer;
