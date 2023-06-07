@@ -8,7 +8,7 @@ const LoginContent = () => {
       <Col lg="6" xl="7" className="d-none d-lg-flex login-info">
         <InfoLogin
           title="Empieza a hacer tus reservas"
-          message="Si todavía no tienes una cuenta"
+          message="Si todavía no tienes una cuentas"
           to="/register"
         />
       </Col>

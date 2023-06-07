@@ -275,3 +275,18 @@ header {
     }
   }
 }
+footer{
+  background-color: #755B3E;
+  background-attachment: fixed;
+  .nav-end{
+    li{
+      white-space: nowrap;
+      font-size: 0.8rem;
+      i{
+        color: #ffffff; 
+        margin-right: 10px;
+      }
+    }
+
+  }
+}
