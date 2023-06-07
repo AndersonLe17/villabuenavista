@@ -210,10 +210,7 @@ header {
 .layout-content {
   padding-left: 7rem;
   transition: padding-left 0.45s ease-in-out;
-}
-
-.btn-home {
-  width: 9.5rem;
+  width: 100%;
 }
 
 .btn-toggle {
@@ -323,13 +320,6 @@ header {
   }
 }
 
-.card-service {
-  .card-img {
-    max-width: 100%;
-    height: 330px;
-  }
-}
-
 .dropend .dropdown-toggle::after {
   content: none;
 }
@@ -382,7 +372,14 @@ header {
   }
 }
 
-.card {
+.card-service {
+  .card-img {
+    max-width: 100%;
+    height: 330px;
+  }
+}
+
+.card-detail {
   display: flex;
   flex-direction: column;
   align-items: center;

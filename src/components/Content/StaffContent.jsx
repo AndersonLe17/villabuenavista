@@ -1,9 +1,16 @@
-import React from 'react'
+import { Container } from "react-bootstrap";
+import Breadcrumb from "./components/Breadcrumb";
+import { RegDataTable } from "../DataTable";
+
 
 const StaffContent = () => {
   return (
-    <div>StaffContent</div>
-  )
-}
+    <Container fluid className="py-4">
+      <Breadcrumb subTitle="Personal" title="Personas"/>
 
-export default StaffContent
+      <RegDataTable />
+    </Container>
+  );
+};
+
+export default StaffContent;

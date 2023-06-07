@@ -16,8 +16,8 @@ const NavBar = ({ img }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <SearchInput />
-            <ButtonCustom variant="bone" className="btn-home me-2" text="Registrarse" onClick={() => navigate('/register')} />
-            <ButtonCustom variant="basic" className="btn-home" text="Iniciar Sesíon" onClick={() => navigate('/login')} />
+            <ButtonCustom variant="bone" className="w-auto px-4 me-2" text="Registrarse" onClick={() => navigate('/register')} />
+            <ButtonCustom variant="basic" className="w-auto px-4" text="Iniciar Sesíon" onClick={() => navigate('/login')} />
           </Nav>
         </Navbar.Collapse>
       </Container>

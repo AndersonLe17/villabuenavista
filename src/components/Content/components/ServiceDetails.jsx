@@ -55,7 +55,7 @@ const ServiceDetails = () => {
 
 const Feature = ({ icon, sub, detail }) => {
   return (
-    <div className="card">
+    <div className="card card-detail">
       <div className="card-content">
         <div className="card-icon">
           <i className={icon}></i>
