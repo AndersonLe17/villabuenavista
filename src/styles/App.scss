@@ -380,6 +380,7 @@ header {
           display: none;
         }
       }
+     
     }
   }
   .layout-content {
@@ -481,8 +482,29 @@ header {
     font-size: 15px;
   }
 }
-.banner{
-  @media screen and (max-width: 768px) {
-    
+.carousel {
+  z-index: -99;
+}
+.vh-100{
+  @media screen and (max-width: 1200px) {
+    height: 80vh!important;
+  }
+  @media screen and (max-width: 840px) {
+    height: 65vh!important;
+  }
+  @media screen and (max-width: 470px) {
+    height: 35vh!important;
   }
 }
+.image-container {
+  position: relative;
+  .image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.788));
+  }
+}
+
+
