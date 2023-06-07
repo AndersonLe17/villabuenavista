@@ -70,8 +70,8 @@ const Feature = ({ icon, sub, detail }) => {
 const Offer = () => {
   return (
     <div>
-      <div className="offer-sub text-center">
-        <h2>Lo que ofrecemos</h2>
+      <div className=" offer text-center">
+        <h3 className="offer-sub text-center">Lo que ofrecemos</h3>
         <div className="offer-content">
           <p>
             Como hospedaje, ofrecemos una variedad de comodidades diseñados para

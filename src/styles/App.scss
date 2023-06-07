@@ -2,6 +2,7 @@
 @import "colors";
 @import "vars";
 
+
 h1,
 h2,
 h3,
@@ -28,6 +29,7 @@ header {
     &-desc {
       font-weight: 1.05em;
     }
+    
   }
   .header-link {
     text-decoration: none;
@@ -105,7 +107,7 @@ header {
   width: 7rem;
   background-color: $yellow;
   border-radius: 0 20px 20px 0;
-  padding: 1rem 0.90rem;
+  padding: 1rem 0.9rem;
   transition: transform 0.45s ease-in-out;
   &-img {
     margin-top: 0.75rem;
@@ -170,13 +172,16 @@ header {
         opacity: 1 !important;
       }
       &:hover {
-        i, p {
+        i,
+        p {
           opacity: 1;
           text-shadow: 1px 1px #00000077;
         }
       }
       &.active {
-        i, p, a {
+        i,
+        p,
+        a {
           opacity: 1;
           text-shadow: 1px 1px #00000077;
         }
@@ -223,7 +228,7 @@ header {
   background-color: $yellow;
   margin: 0 1rem 1rem 0;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   i {
@@ -436,5 +441,61 @@ footer{
       }
     }
 
+  }
+}
+
+.offer-sub {
+  width: 540px;
+  height: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 64px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 30px;
+  }
+}
+.offer-content {
+  width: 540px;
+  height: 96px;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 15px;
+  }
+}
+.banner{
+  @media screen and (max-width: 768px) {
+    
   }
 }
