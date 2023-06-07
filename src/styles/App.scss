@@ -506,5 +506,11 @@ header {
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.788));
   }
 }
+.nav-custom {
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  align-items: center;
+}
 
 
